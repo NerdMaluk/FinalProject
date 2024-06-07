@@ -1,0 +1,72 @@
+Sistema de Gestão de Produtos
+
+Visão Geral
+Este projeto é um sistema simples de gestão de produtos, desenvolvido em Java, que permite diferentes tipos de usuários (Administrador, Funcionário e Cliente) realizar operações específicas relacionadas aos produtos.
+
+Estrutura do Projeto
+Produto:
+
+Atributos: Nome, cor, Preço, Quantidade, Descrição.
+Métodos:
+Getters e Setters.
+exibirInfoProduto(): Exibe as informações do produto.
+adicionarProduto(Produto produto): Adiciona um produto à lista de produtos.
+getProdutos(): Retorna a lista de produtos.
+
+Administrador:
+Métodos:
+adicionarProdutos(Scanner scanner): Adiciona novos produtos ao estoque com entrada do usuário.
+consultarEstoque(): Exibe todos os produtos disponíveis no estoque.
+
+Funcionario:
+Métodos:
+realizarVenda(Scanner scanner): Realiza a venda de produtos, ajustando a quantidade disponível no estoque.
+
+Cliente:
+Métodos:
+consultarProdutos(): Consulta e exibe os produtos disponíveis.
+
+Loja:
+Contém o método main que gerencia o menu de interação do usuário e permite acessar as funcionalidades das outras classes.
+
+Funcionalidades
+Administrador:
+
+
+Adicionar produtos ao estoque.
+Consultar o estoque de produtos.
+
+Funcionário:
+Realizar vendas de produtos.
+
+Cliente:
+Consultar produtos disponíveis.
+
+Como Executar
+Compilação:
+Compile os arquivos Java com o comando:
+javac Produto.java Administrador.java Funcionario.java Cliente.java Loja.java
+
+Execução:
+Execute o programa com o comando:
+java Loja
+
+Menu de Opções
+Adicionar produto (Administrador)
+Consultar estoque (Administrador)
+Realizar venda (Funcionário)
+Consultar produtos (Cliente)
+Sair
+
+Exemplo de Uso
+Adicionar Produto:
+Administrador insere os detalhes do produto como nome, preço, quantidade e descrição.
+
+Consultar Estoque:
+Administrador visualiza a lista de produtos com detalhes.
+
+Realizar Venda:
+Funcionário escolhe um produto e insere a quantidade a ser vendida. O estoque é atualizado automaticamente.
+
+Consultar Produtos:
+Cliente visualiza a lista de produtos disponíveis.
